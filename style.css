@@ -1,0 +1,33 @@
+body{
+    background-color: aqua;
+}
+  
+
+#container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+    /*border: 2px red solid;*/
+}
+
+#center-txt-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+    width: 90vw;
+    height: 90vh;
+}
+
+#center-txt {
+    font-size: max(3vw, 30px);
+    font-family: 'Shadows Into Light', cursive;
+}
+
+#form-container {
+    
+}
+
