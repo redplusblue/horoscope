@@ -1,9 +1,10 @@
 # horoscope/prediction generator
 ### A simple random prediction generator that I made for fun. 
 
-#### Click on the picture/the link below to try!
+#### Click on the pictures/the link below to try!
 
-<a href="https://redplusblue.github.io/horoscope/"><img src="files/preview.png"></a>
+<a href="https://redplusblue.github.io/horoscope/"><img src="files/preview1.png"></a>
+<a href="https://redplusblue.github.io/horoscope/"><img src="files/preview2.png"></a>
 
 ## [Click to open](https://redplusblue.github.io/horoscope/)
 
