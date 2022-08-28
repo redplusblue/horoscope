@@ -75,30 +75,36 @@ function clicked(array) {
              matrixDisplay.innerText = "Last prediction!";
         }
     } else {
+        username = document.getElementById('name-box').value;
         source.style.display = 'inherit'; 
         centerText.innerText = "Click again!";
-        matrixDisplay.innerText = "Haha, I'm funny!";
+        matrixDisplay.innerText = `Haha look ${username}, I'm funny!`;
+        if(funny.length == 2) {
+            matrixDisplay.innerText = "Last Joke!";
+       }
     }
 }
 
 function updateDisplay(_string, array) {
     if(array == "events") {
+        randNum = parseInt(Math.random()*events.length)
+        if (events.length == 1) {randNum = 0;}
+        display.innerText = `${_string.toLowerCase()} ${events[randNum]}`
+        events.splice(randNum, 1)
         if(events.length == 0) 
             {
                 display.innerText = `That is all for today, ${_string.toLowerCase()}.`
                 endSession();
             }
-        randNum = parseInt(Math.random()*events.length)
-        display.innerText = `${_string.toLowerCase()} ${events[randNum]}`
-        events.splice(randNum, 1)
     } else {
+        randNum = parseInt(Math.random()*funny.length)
+        if (funny.length == 1) {randNum = 0;}
+        display.innerText = `${funny[randNum]}`
+        funny.splice(randNum, 1)
         if(funny.length == 0) {
             display.innerText = `That is all for today, ${_string.toLowerCase()}.`
             endSession();
         }
-        randNum = parseInt(Math.random()*funny.length)
-        display.innerText = `${funny[randNum]}`
-        funny.splice(randNum, 1)
     }
 }
 
