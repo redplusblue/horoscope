@@ -38,6 +38,7 @@ body{
 }
 
 #display-text {
+    text-align: center;
     pointer-events: none;
     opacity: 85%;
     padding: 0.2em;
@@ -105,9 +106,23 @@ body{
 #reload-btn {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 3em;
+    padding: 0.2em;
     font-weight: bold;
     display: none;
-    width: 20vw;
-    height: 10vh;
+    width: fit-content;
+    height: fit-content;
+}
+
+#src {
+    display: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 10px;
+    margin-top: 5vh;
+}
+
+footer {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
 }
 
