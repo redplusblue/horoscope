@@ -85,7 +85,7 @@ body{
         border: 3px solid var(--purple);
 }
 
-#submit-btn {
+#submit-btn, #reload-btn {
     outline: 0;
     border: 0;
     cursor: pointer;
@@ -97,8 +97,17 @@ body{
     transition: transform 200ms,background 200ms;
 }
 
-#submit-btn:hover{
+#submit-btn:hover, #reload-btn:hover {
     background: var(--purple);
     transform: translateY(-2px);
+}
+
+#reload-btn {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    display: none;
+    width: 20vw;
+    height: 10vh;
 }
 
