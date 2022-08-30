@@ -5,7 +5,7 @@ let events = ["will fall down the stairs if the sun is too high.",
              "will choke if they eat a lot of riceballs.", 
              "will fly a truck in the water.", 
              "will have a sword fighting contest with a baboon.",
-             "will drink tea and chill out."]
+             "will drink tea and chill out."];
 let funny = ["I didn't fall down. I did attack the floor, though.",
              "I don't suffer from insanity, I enjoy every minute of it.", 
              "I don't need a hair stylist, my pillow gives me a new hairstyle every morning.",
@@ -42,26 +42,25 @@ let funny = ["I didn't fall down. I did attack the floor, though.",
             "Hard work pays off in the future. Lounging on the couch pays off right now.",
             "God created the world, everything else is made in China.",
             "The shortest horror story: Monday.",
-            "The road to success is always under construction."]
-
-let button = document.getElementById('submit-btn')
-button.addEventListener('click', recordName)
-let reloadButton = document.getElementById('reload-btn')
-reloadButton.addEventListener('click', reloadPage);
-
+            "The road to success is always under construction."];
+let button = document.getElementById('submit-btn');
+let reloadButton = document.getElementById('reload-btn');
 let display = document.getElementById('display-text')
-let matrixDisplay = document.getElementById('random-display-text')
-let centerText = document.getElementById('center-txt')
-let source = document.getElementById('src')
+let matrixDisplay = document.getElementById('random-display-text');
+let centerText = document.getElementById('center-txt');
+let source = document.getElementById('src');
+
+button.addEventListener('click', recordName);
+reloadButton.addEventListener('click', reloadPage);
 
 function recordName() {
     username = document.getElementById('name-box').value;
     if(initUsername == username) {
-        clicked("funny")
-        updateDisplay(username, "funny")
+        clicked("funny");
+        updateDisplay(username, "funny");
     } else {
-        clicked("events")
-        updateDisplay(username, "events")
+        clicked("events");
+        updateDisplay(username, "events");
     }
 }
 
@@ -87,22 +86,22 @@ function clicked(array) {
 
 function updateDisplay(_string, array) {
     if(array == "events") {
-        randNum = parseInt(Math.random()*events.length)
+        randNum = parseInt(Math.random()*events.length);
         if (events.length == 1) {randNum = 0;}
-        display.innerText = `${_string.toLowerCase()} ${events[randNum]}`
-        events.splice(randNum, 1)
+        display.innerText = `${_string.toLowerCase()} ${events[randNum]}`;
+        events.splice(randNum, 1);
         if(events.length == 0) 
             {
-                display.innerText = `That is all for today, ${_string.toLowerCase()}.`
+                display.innerText = `That is all for today, ${_string.toLowerCase()}.`;
                 endSession();
             }
     } else {
-        randNum = parseInt(Math.random()*funny.length)
+        randNum = parseInt(Math.random()*funny.length);
         if (funny.length == 1) {randNum = 0;}
-        display.innerText = `${funny[randNum]}`
-        funny.splice(randNum, 1)
+        display.innerText = `${funny[randNum]}`;
+        funny.splice(randNum, 1);
         if(funny.length == 0) {
-            display.innerText = `That is all for today, ${_string.toLowerCase()}.`
+            display.innerText = `That is all for today, ${_string.toLowerCase()}.`;
             endSession();
         }
     }
