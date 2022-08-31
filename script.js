@@ -102,6 +102,8 @@ function updateDisplay(_string, array) {
         funny.splice(randNum, 1);
         if(funny.length == 0) {
             display.innerText = `That is all for today, ${_string.toLowerCase()}.`;
+            matrixDisplay.innerText = "Come back later!";
+            source.style.display = 'none';
             endSession();
         }
     }
