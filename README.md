@@ -3,8 +3,8 @@
 
 #### Click on the pictures/the link below to try!
 
-<a href="https://redplusblue.github.io/horoscope/"><img src="files/preview1.png"></a>
-<a href="https://redplusblue.github.io/horoscope/"><img src="files/preview2.png"></a>
+<a href="https://redplusblue.github.io/horoscope/"><img src="files/preview1.png" alt="A preview picture" title="Click Me!"></a>
+<a href="https://redplusblue.github.io/horoscope/"><img src="files/preview2.png" alt="A preview picture" title="Click Me!"></a>
 
 ## [Click to open](https://redplusblue.github.io/horoscope/)
 
